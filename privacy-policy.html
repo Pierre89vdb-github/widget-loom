@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Widget Loom — Privacy Policy</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f8fafc;
+      --card: #ffffff;
+      --text: #0f172a;
+      --muted: #475569;
+      --accent: #2563eb;
+      --border: #e2e8f0;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0f172a;
+        --card: #1e293b;
+        --text: #f1f5f9;
+        --muted: #94a3b8;
+        --accent: #60a5fa;
+        --border: #334155;
+      }
+    }
+    body {
+      margin: 0;
+      padding: 24px 16px 48px;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.6;
+    }
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 32px;
+      box-sizing: border-box;
+    }
+    h1 { margin-top: 0; font-size: 1.85rem; }
+    h2 { margin-top: 1.75rem; font-size: 1.15rem; color: var(--accent); }
+    p, li { color: var(--text); }
+    .meta { color: var(--muted); font-size: 0.92rem; margin-bottom: 1.5rem; }
+    a { color: var(--accent); }
+    ul { padding-left: 1.25rem; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Privacy Policy — Widget Loom</h1>
+    <p class="meta">
+      Package: <code>com.pierre89vdb.widgetloom</code> · Developer: Pierre Vandenberghe ·
+      Effective date: November 20, 2026
+    </p>
+
+    <p>
+      <strong>Widget Loom</strong> is designed with strict respect for your privacy.
+      The app contains <strong>no ads, no third-party analytics SDKs, no crash trackers,
+      and no user accounts</strong>. We do not collect, sell, rent, or store any of your
+      personal data on our own servers.
+    </p>
+
+    <h2>1. Permissions &amp; How Data Is Used</h2>
+    <ul>
+      <li>
+        <strong>Calendar (<code>READ_CALENDAR</code> — optional):</strong>
+        Used solely when you enable the Calendar Schedule widget to read upcoming events
+        from the calendars you select on your device. Calendar events are processed strictly
+        on-device for widget rendering and are never transmitted over the network.
+      </li>
+      <li>
+        <strong>Location (<code>ACCESS_COARSE_LOCATION</code>, <code>ACCESS_FINE_LOCATION</code> — optional):</strong>
+        Used only if you ask the Golden Hour or Hourly Weather widget to fetch your current
+        location (while in the app or when you manually refresh/configure GPS). Widget Loom
+        does <strong>not</strong> request or use background location. You can instead pick any
+        city or enter coordinates manually. When Weather updates, only your selected
+        latitude and longitude are sent to the configured weather provider to retrieve forecasts.
+      </li>
+      <li>
+        <strong>Alarms (<code>SET_ALARM</code> &amp; Clock queries — optional):</strong>
+        Used solely to read your next scheduled system alarm time for display inside the
+        Calendar Schedule widget (when enabled) and to open your device's Clock app on tap.
+      </li>
+      <li>
+        <strong>Internet (<code>INTERNET</code>):</strong>
+        Used exclusively by the Hourly Weather widget to fetch forecasts and optional city
+        search results from the selected weather data provider.
+      </li>
+    </ul>
+
+    <h2>2. Third-Party Weather Data Providers</h2>
+    <p>
+      Depending on your widget configuration, geographic coordinates (or city query text) are sent
+      directly from your device to:
+    </p>
+    <ul>
+      <li>
+        <strong>MET Norway (Yr.no Locationforecast):</strong> Default weather provider. Subject to
+        MET Norway's terms and privacy policy (<a href="https://api.met.no/">api.met.no</a>).
+        Weather data is provided under CC BY 4.0.
+      </li>
+      <li>
+        <strong>OpenWeatherMap (optional, bring-your-own API key):</strong> Only contacted if you
+        explicitly select OpenWeatherMap and enter your own API key. Your personal API key is
+        stored locally on your device and excluded from cloud backups.
+      </li>
+    </ul>
+
+    <h2>3. Local Storage &amp; Data Retention</h2>
+    <p>
+      Widget preferences, selected calendars, custom coordinates, optional OpenWeatherMap API keys,
+      and temporary weather response caches are stored solely on your device in Android DataStore
+      and SharedPreferences, and excluded from Android Auto Backup rules. Uninstalling Widget Loom
+      permanently removes all stored data from your device.
+    </p>
+
+    <h2>4. Children's Privacy</h2>
+    <p>
+      Widget Loom does not knowingly collect personal information from anyone, including children
+      under the age of 13 (or the applicable age of consent in your jurisdiction).
+    </p>
+
+    <h2>5. Changes to This Policy</h2>
+    <p>
+      If future features alter how permissions or data are handled, this Privacy Policy will be
+      updated before those changes are released.
+    </p>
+
+    <h2>6. Contact</h2>
+    <p>
+      For any questions or privacy requests, please contact Pierre Vandenberghe at
+      <a href="mailto:pierre.vandenberghe2@gmail.com">pierre.vandenberghe2@gmail.com</a>.
+    </p>
+  </main>
+</body>
+</html>
